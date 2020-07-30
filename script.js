@@ -12,12 +12,13 @@ cardsArr.cards.forEach(card => {
   charCard.id = `${card.name}`
   charCard.onclick = function(e){
     charCard.classList.toggle("hidden");
-  }
-  charCard.ondblclick = function(e){
-    // console.log('dblclicked')
-    // if chosen is true than null, if chosen is false then :
     isChosen ? null : isChosenFunc(e)
   }
+  // charCard.ondblclick = function(e){
+  //   // console.log('dblclicked')
+  //   // if chosen is true than null, if chosen is false then :
+  //   // isChosen ? null : isChosenFunc(e)
+  // }
   charCard.innerHTML = `
       <h2> ${card.name}</h2>
       <img src=${card.picture} alt="">

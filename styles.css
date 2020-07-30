@@ -30,5 +30,5 @@ body {
 
 .hidden {
   background-color: red;
-  /* filter: invert(100%); */
+  filter: invert(69%);
 }
